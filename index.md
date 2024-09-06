@@ -1,35 +1,83 @@
 ---
 title: Home
 layout: home
+nav_order: 1
 ---
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+<style>
+  .flex-container {
+    #background-color: #F5F6FA;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start; 
+  }
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+  .flex-item {
+    padding-left: 20px; 
+  }
 
-More specifically, the created site:
+  .flex-item:first-child {
+    flex: 1;
+  }
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+  .flex-item:last-child {
+    flex: 2; 
+  }
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+  /* Image styles for small screens (up to 767px width) */
+  @media (max-width: 767px) {
+    .flex-container {
+      flex-direction: column; 
+      align-items: center;
+    }
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+    .flex-container img {
+      width: 100%; 
+    }
 
-To get started with creating a site, simply:
+    .flex-item {
+      padding-left: 0;
+      text-align: center;
+    }
+    .flex-item h1 {
+      text-align: center;
+    }
+  }
+</style>
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+<div class="flex-container">
+  <div class="flex-item">
+    <img src="/assets/images/wchoi_gp_60.png" alt="Wonchan Choi" style="max-width: 100%; height: auto;">
+  </div>
+  <div class="flex-item">
+    <h2><b>Wonchan Choi, PhD</b></h2>
+    Associate Professor<br/>
+    School of Information Studies<br/>
+    University of Wisconsin-Milwaukee<br/>
+    Northwest Quadrant Building D 2890<br/>
+    2025 E Newport Ave, Milwaukee, WI 53211<br/>
+    <a href="mailto:wchoi@uwm.edu"><i class="fas fa-envelope"></i> Email</a><br/>
+    <a href="https://scholar.google.com/citations?user=p5_1GbgAAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+</div>
+</div>
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+I am an associate professor at the UWM iSchool. My research program involves studies of **information behavior** and **human-computer interaction**. My [**current projects**](https://wonchan-choi.github.io/research.html) focus on:
+- Credibility assessment of user- and AI-generated content
+- Generative AI literacy in academic settings
+- Usability and accessibility of information retrieval systems for disadvantaged user groups
 
-----
+## News 
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+| Date             | News                                        | 
+|:-----------------|:--------------------------------------------|
+| 2024-08-20       | Our paper "Help-seeking Situations Related to Visual Interactions on Mobile Platforms and Recommended Designs for Blind and Visually Impaired Users" is accepted for publication in the <i>[Journal of Imaging](https://www.mdpi.com/journal/jimaging)</i>. |
+| 2024-08-19       | Promoted to Associate Professor.            |
+| 2024-07-01       | Two posters are accepted for the [2024 Annual Meeting of ASIS&T](https://www.asist.org/am24/): (1) Reflective and Formative Indicators of Information Credibility on Social Media; (2) College Students’ Metaphors for ChatGPT: An Exploratory Study.   |
+| 2024-01-01       | The grand opening of this website.          |
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+## Visitors Map
+<script align="left" type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=92a5ba&w=300&t=m&d=Buia3_aP6HE9HUvnNVOCjl51F8oLJBl4jj6v4tYFxDE&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353'></script>
+
